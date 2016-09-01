@@ -121,17 +121,17 @@ a {
   overflow: hidden;
   border-radius: 3px;
   -webkit-user-select: none;
-  /* Remove seleção */
+  /* Remove sele├ğ├úo */
   background-color: #fff;
   border-color: #cdcdcd;
-  /* Transição de hover */
+  /* Transi├ğ├úo de hover */
   -webkit-transition: all 0.3ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 0.3ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 0.3ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 0.3ms cubic-bezier(0.42, 0, 0.58, 1);
   /* ease-in-out */
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
-  /* Sombra padrão */
+  /* Sombra padr├úo */
   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
   .btn-ripple:hover {
@@ -286,6 +286,13 @@ section:nth-child(8) {
   display: block;
   height: 50px;
   background-color: #F44336;
+  overflow: hidden; }
+
+#mFooter {
+  width: 100%;
+  display: block;
+  height: 150px;
+  background-color: #212121;
   overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */
