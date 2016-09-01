@@ -1,0 +1,24 @@
+.gray {
+    background-color: #efefef;
+    height: 500px;
+}
+
+.grid {
+    @include grid(5, 2%);
+    background-color: pink;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        @include grid(3, 15%);
+        @include easing(75ms);
+        background-color: skyblue;
+        height: 300px;
+        color: #fff;
+        &:nth-child(5),
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+}

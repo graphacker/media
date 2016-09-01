@@ -1,0 +1,4 @@
+// kullanımı budur   -- through --    yerine    --  to --    yazılırsa < anlamına gelir ;
+@for $i from  1 through 6{
+    h#{$i} { font-size: $i / 6 ; }
+}
