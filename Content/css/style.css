@@ -281,4 +281,11 @@ section:nth-child(8) {
   display: block;
   height: 500px; }
 
+#mNav {
+  width: 100%;
+  display: block;
+  height: 50px;
+  background-color: #F44336;
+  overflow: hidden; }
+
 /*# sourceMappingURL=style.css.map */
