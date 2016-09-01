@@ -56,6 +56,14 @@ a {
 @media (min-width: 620px) {
   .container {
     background-color: lightblue !important; } }
+@media (max-width: 320px) {
+  .SearchForm {
+    left: 16px !important; }
+    .SearchForm input {
+      font-size: 30px !important; }
+
+  .icon-close {
+    left: 245px !important; } }
 .gray {
   background-color: #efefef;
   height: 500px; }
@@ -285,7 +293,7 @@ section:nth-child(8) {
   width: 100%;
   display: block;
   height: 50px;
-  background-color: #F44336;
+  background-color: #ec2142;
   overflow: hidden; }
 
 #mFooter {
@@ -294,5 +302,93 @@ section:nth-child(8) {
   height: 150px;
   background-color: #212121;
   overflow: hidden; }
+
+.control {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  cursor: pointer; }
+  .control .fa,
+  .control .icon-close {
+    transition: 0.2s ease-in-out; }
+  .control:hover .SearchButton {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.SearchButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #ec2142;
+  outline: 0;
+  transform-origin: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.fa {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: white;
+  font-size: 28px; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  body.searchMode {
+    overflow: hidden; }
+    body.searchMode .SearchForm,
+    body.searchMode .icon-close {
+      opacity: 1;
+      transform: none;
+      pointer-events: all; }
+    body.searchMode .control .fa {
+      opacity: 0; }
+    body.searchMode .control .SearchButton {
+      transform: scale(80); }
+
+.icon-close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  color: #FFF;
+  font-size: 80px;
+  opacity: 0;
+  transform: translate(10px, 0) rotate(90deg);
+  transition: all 0.3s ease-in-out; }
+
+.SearchForm {
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  margin-top: -40px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(40px, 0);
+  transition: all 0.3s ease-in-out; }
+  .SearchForm input {
+    color: #fff;
+    font-size: 54px;
+    border: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    outline: 0;
+    font-weight: 200; }
+  .SearchForm ::-webkit-input-placeholder {
+    color: #EEE; }
+  .SearchForm :-moz-placeholder {
+    color: #EEE;
+    opacity: 1; }
+  .SearchForm ::-moz-placeholder {
+    color: #EEE;
+    opacity: 1; }
+  .SearchForm :-ms-input-placeholder {
+    color: #EEE; }
 
 /*# sourceMappingURL=style.css.map */

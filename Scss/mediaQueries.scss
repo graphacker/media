@@ -6,3 +6,14 @@
    //     background-color: yellow !important;
     }
 }
+@media(max-width:320px){
+.SearchForm{
+        left:16px !important;
+        input{
+            font-size: 30px !important;
+        }
+    }
+    .icon-close{
+        left: 245px !important;
+    }
+}
