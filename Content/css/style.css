@@ -53,6 +53,9 @@ a {
   text-decoration: none;
   color: #212121; }
 
+@media (min-width: 620px) {
+  .container {
+    background-color: lightblue !important; } }
 .gray {
   background-color: #efefef;
   height: 500px; }
@@ -90,7 +93,7 @@ a {
   display: block; }
 
 .container {
-  width: 1280px;
+  width: 96%;
   margin: 0 auto;
   position: relative; }
   .container:after, .container:before {
@@ -272,5 +275,10 @@ section:nth-child(8) {
     height: 600px;
     width: 100%;
     display: block; }
+
+.container {
+  background-color: pink;
+  display: block;
+  height: 500px; }
 
 /*# sourceMappingURL=style.css.map */
