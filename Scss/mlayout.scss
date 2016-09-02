@@ -4,6 +4,15 @@
     height: 50px;
     background-color: $primary-color;
     overflow: hidden;
+    #navLogo{
+            position: absolute;
+            z-index: 9;
+            left: 40%;
+            top: 2%;
+            img{
+                width: 60%;
+            }
+    }
     #collapseItem {
             width: 60px;
             display: block;

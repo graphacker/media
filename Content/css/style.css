@@ -66,7 +66,10 @@ a {
     left: 245px !important; }
 
   #navSlideWrapper {
-    width: 220px !important; } }
+    width: 220px !important; }
+
+  #navLogo {
+    left: 27% !important; } }
 .gray {
   background-color: #efefef;
   height: 500px; }
@@ -298,6 +301,13 @@ section:nth-child(8) {
   height: 50px;
   background-color: #ec2142;
   overflow: hidden; }
+  #mNav #navLogo {
+    position: absolute;
+    z-index: 9;
+    left: 40%;
+    top: 2%; }
+    #mNav #navLogo img {
+      width: 60%; }
   #mNav #collapseItem {
     width: 60px;
     display: block;
