@@ -63,7 +63,10 @@ a {
       font-size: 30px !important; }
 
   .icon-close {
-    left: 245px !important; } }
+    left: 245px !important; }
+
+  #navSlideWrapper {
+    width: 220px !important; } }
 .gray {
   background-color: #efefef;
   height: 500px; }
@@ -295,6 +298,77 @@ section:nth-child(8) {
   height: 50px;
   background-color: #ec2142;
   overflow: hidden; }
+  #mNav #collapseItem {
+    width: 60px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 10px; }
+    #mNav #collapseItem span {
+      width: 50%;
+      height: 4px;
+      display: block;
+      margin: 0 auto 8px auto;
+      background-color: white; }
+  #mNav .navOverlay {
+    position: fixed;
+    visibility: hidden;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); }
+    #mNav .navOverlay #navSlideWrapper {
+      -webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+      /* ease-in-out */
+      position: absolute;
+      height: 100vh;
+      width: 280px;
+      background-color: #efefef;
+      left: -300px;
+      top: 0px;
+      display: block;
+      z-index: 99;
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.4); }
+      #mNav .navOverlay #navSlideWrapper ul {
+        text-align: center;
+        font-size: 30px; }
+        #mNav .navOverlay #navSlideWrapper ul li {
+          padding: 20px; }
+    #mNav .navOverlay .navSlideWrapperTransform {
+      transform: translateX(280px); }
+  #mNav .navOverlayProp {
+    visibility: visible; }
+  #mNav .control {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    cursor: pointer; }
+    #mNav .control .fa,
+    #mNav .control .icon-close {
+      transition: 0.2s ease-in-out; }
+    #mNav .control:hover .SearchButton {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  #mNav .SearchButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #ec2142;
+    outline: 0;
+    transform-origin: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+  #mNav .fa {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: white; }
 
 #mFooter {
   width: 100%;
@@ -302,38 +376,6 @@ section:nth-child(8) {
   height: 150px;
   background-color: #212121;
   overflow: hidden; }
-
-.control {
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  top: 3px;
-  right: 0;
-  cursor: pointer; }
-  .control .fa,
-  .control .icon-close {
-    transition: 0.2s ease-in-out; }
-  .control:hover .SearchButton {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-
-.SearchButton {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  box-sizing: border-box;
-  padding: 20px;
-  background: #ec2142;
-  outline: 0;
-  transform-origin: 50%;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
-
-.fa {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  color: white;
-  font-size: 28px; }
 
 body {
   width: 100vw;

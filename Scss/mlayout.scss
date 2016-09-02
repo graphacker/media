@@ -4,15 +4,55 @@
     height: 50px;
     background-color: $primary-color;
     overflow: hidden;
-}
-#mFooter{
-    width: 100%;
-    display: block;
-    height: 150px;
-    background-color:$primary-text-color;
-    overflow: hidden;
-}
- .control{
+    #collapseItem {
+            width: 60px;
+            display: block;
+            float: left;
+            position: absolute;
+            top: 10px;
+            span {
+                width: 50%;
+                height: 4px;
+                display: block;
+                margin: 0 auto 8px auto;
+                background-color: white;
+            }
+    }
+    .navOverlay {
+    position: fixed;
+    visibility: hidden;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+        #navSlideWrapper {
+            @include easing(500ms);
+            position: absolute;
+            height: 100vh;
+            width: 280px;
+            background-color: #efefef;
+            left: -280px - 20px;
+            top: 0px;
+            display: block;
+            z-index: 99;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, .4);
+            ul{
+                text-align: center;
+                font-size: 30px;
+                li{
+                    padding: 20px;
+                }
+            }
+        }
+        .navSlideWrapperTransform {
+            transform: translateX(280px);
+            //margin-right: $navSlideWidth ;
+        }
+    }
+    .navOverlayProp {
+         visibility: visible;
+    }
+     .control{
          width: 64px;
          height: 64px;
          position: absolute;
@@ -52,8 +92,19 @@
         top: 14px;
         left: 14px;
         color:white;
-        font-size: 28px;
     } 
+    
+}
+
+
+#mFooter{
+    width: 100%;
+    display: block;
+    height: 150px;
+    background-color:$primary-text-color;
+    overflow: hidden;
+}
+
     
 body{
     width: 100vw;
@@ -81,54 +132,52 @@ body{
     }
 }   
 .icon-close {
-      position: fixed;
-      top: 30px;
-      right: 30px;
-      color: #FFF;
-      font-size: 80px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  color: #FFF;
+  font-size: 80px;
+  opacity: 0;
+  transform: translate( 10px, 0) rotate(90deg);
+  transition: all 0.3s ease-in-out;
+}
+.SearchForm{
+    $placeholder-color: #EEE;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    margin-top: -40px;
 
-      opacity: 0;
-      transform: translate( 10px, 0) rotate(90deg);
-      transition: all 0.3s ease-in-out;
-    }
-    .SearchForm{
-        $placeholder-color: #EEE;
-        height: 80px;
-        position: absolute;
-        top: 50%;
-        left: 50px;
-        margin-top: -40px;
-  
-        pointer-events: none;
-        opacity: 0;
-        transform: translate( 40px, 0);
-        transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate( 40px, 0);
+    transition: all 0.3s ease-in-out;
+        input {
+        color: #fff;
+        font-size: 54px;
+        border: 0;
+        background: transparent;
+        -webkit-appearance: none;
+        box-sizing: border-box;
+        outline: 0;
+        font-weight: 200;
 
-            input {
-            color: #fff;
-            font-size: 54px;
-            border: 0;
-            background: transparent;
-            -webkit-appearance: none;
-            box-sizing: border-box;
-            outline: 0;
-            font-weight: 200;
-    
-    
-            }
-  
-        ::-webkit-input-placeholder { 
-          color: $placeholder-color;
+
         }
-        :-moz-placeholder { 
-           color: $placeholder-color;
-           opacity:  1;
-        }
-        ::-moz-placeholder { 
-           color: $placeholder-color;
-           opacity:  1;
-        }
-        :-ms-input-placeholder {
-           color: $placeholder-color;
-        }
+
+    ::-webkit-input-placeholder { 
+      color: $placeholder-color;
     }
+    :-moz-placeholder { 
+       color: $placeholder-color;
+       opacity:  1;
+    }
+    ::-moz-placeholder { 
+       color: $placeholder-color;
+       opacity:  1;
+    }
+    :-ms-input-placeholder {
+       color: $placeholder-color;
+    }
+}

@@ -10,4 +10,17 @@ $('.icon-close').click( function(){
   $('body').removeClass('searchMode');
 });
 
-  //$(".container").css("position","relative");
+
+    var overlay = $('.navOverlay');
+    var sliderWrapper = overlay.find('#navSlideWrapper');
+
+    $('#collapseItem').on('click', function() {
+        overlay.toggleClass('navOverlayProp');
+        sliderWrapper.toggleClass('navSlideWrapperTransform');
+    })
+
+    overlay.on('click', function() {
+        overlay.toggleClass('navOverlayProp');
+        sliderWrapper.toggleClass('navSlideWrapperTransform');
+    })
+
