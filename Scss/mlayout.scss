@@ -32,12 +32,12 @@
     visibility: hidden;
     z-index: 99;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, .5);
         #navSlideWrapper {
             @include easing(500ms);
             position: absolute;
-            height: 100vh;
+            height: 100%;
             width: 280px;
             background-color: #efefef;
             left: -280px - 20px;
@@ -50,6 +50,14 @@
                 font-size: 30px;
                 li{
                     padding: 20px;
+                    border-bottom: 2px solid gray;
+                    border-bottom-right-radius: 20px;
+                    &:active{
+                        background: #ec2142;
+                        a{
+                            color:white;
+                        }
+                    }
                 }
             }
         }

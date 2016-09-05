@@ -2,4 +2,40 @@
     background-color: pink;
     display: block;
     height: 500px;
+    .slideWrap{
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        top: 5%;
+        padding: 5px;
+        background: #fff;
+        border: 1px solid #cbcbcb;
+        ul{
+            width: 100%;
+            margin: 0 auto;
+            li{
+                width: 100%;
+                a{
+                    img{
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+    .SlideNav{
+        width:100%;
+        margin: 0 auto;
+            li{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid white;
+                background-color: #cbcbcb;
+            }
+    }
+}
+#slideSection{
+    background-color: white;
 }
