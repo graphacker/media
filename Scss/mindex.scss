@@ -1,20 +1,22 @@
 .container {
-    background-color: pink;
+   // background-color: pink;
     display: block;
-    height: 500px;
+    height: auto;
+    margin-bottom: 20px;
     .slideWrap{
         width: 95%;
         margin: 0 auto;
         position: relative;
-        top: 5%;
-        padding: 5px;
         background: #fff;
         border: 1px solid #cbcbcb;
+        overflow: hidden;
         ul{
-            width: 100%;
+            width: 500%;
             margin: 0 auto;
+            list-style: none;
             li{
-                width: 100%;
+                width: 20%;
+                float: left;
                 a{
                     img{
                         width: 100%;
@@ -23,19 +25,76 @@
                 
             }
         }
-    }
-    .SlideNav{
-        width:100%;
+        .SlideNav{
+        width:35%;
         margin: 0 auto;
+        margin-top: 5px;
             li{
-                width: 10px;
-                height: 10px;
+                width: 15px;
+                height: 15px;
+                display: inline-block;
                 border-radius: 50%;
                 border: 1px solid white;
                 background-color: #cbcbcb;
             }
+        }
+        #sag{
+            position: absolute;
+            right: 5%;
+            top: 40%;
+            background: rgba(0,0,0,0.7);
+            width: 45px;
+            height: 45px;
+            color: white;
+            font-size: 45px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        #sol{
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            background: rgba(0,0,0,0.7);
+            width: 45px;
+            height: 45px;
+            color: white;
+            font-size: 45px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+    
+    .haber{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0;
+        position: relative;
+        .foto{
+            width: 100%;
+            margin: 0 auto;
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+            
+        }
+        .Baslik{
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            color:white;
+            font-size: 27px;
+            padding: 5px;
+            span{
+                margin: 0 auto;
+                display: table;
+            }
+        }
     }
 }
-#slideSection{
+#slideSection,#BesliHaber{
     background-color: white;
+    position: relative;
+    margin-top: 3%;
 }
