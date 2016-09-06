@@ -1,5 +1,8 @@
 /// <reference path="../typings/jquery/jquery.d.ts" />
-
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true
+});
  $('.control').click( function(){
      $(".container").css("position","inherit");
   $('body').addClass('searchMode');
@@ -26,26 +29,26 @@ $('.icon-close').click( function(){
 
 
 index=0;	
-var width = $(".slideWrap ul li")[0].getBoundingClientRect().width;
-	$("#sag").click(function(){
-		if(index<4)index++;
-		
-		
-		$(".slideWrap ul").stop().animate({marginLeft:'-' + (index*width)},300);
-		
-		return false;
-	});
-	$("#sol").click(function(){
-		if(index>0)index--;
-		
-		
-		$(".slideWrap ul").stop().animate({marginLeft:'-' + (index*width)},300);
-		
-		return false;
-	});
-    $(".SearchButton").click(function(){
-        $(this).css("transform","scale(80)");
-    });
-    $(".icon-close").click(function(){
-        $(".SearchButton").css("transform","scale(1)");
-    });
+//var width = $(".slideWrap ul li")[0].getBoundingClientRect().width;
+$("#sag").click(function(){
+	if(index<4)index++;
+	
+	
+	$(".slideWrap ul").stop().animate({marginLeft:'-' + (index*width)},300);
+	
+	return false;
+});
+$("#sol").click(function(){
+	if(index>0)index--;
+	
+	
+	$(".slideWrap ul").stop().animate({marginLeft:'-' + (index*width)},300);
+	
+	return false;
+});
+$(".SearchButton").click(function(){
+    $(this).css("transform","scale(80)");
+});
+$(".icon-close").click(function(){
+    $(".SearchButton").css("transform","scale(1)");
+});

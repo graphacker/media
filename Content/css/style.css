@@ -53,9 +53,6 @@ a {
   text-decoration: none;
   color: #212121; }
 
-@media (min-width: 620px) {
-  .container {
-    background-color: lightblue !important; } }
 @media (max-width: 360px) {
   .SearchForm {
     left: 16px !important; }
@@ -105,6 +102,10 @@ a {
       margin-left: 0; }
     .grid:nth-child(5), .grid:nth-child(3) {
       display: none; } }
+body {
+  font-family: 'Titillium Web', sans-serif !important;
+  background-color: #eee; }
+
 .row {
   width: 100%;
   display: block; }
@@ -112,7 +113,10 @@ a {
 .container {
   width: 96%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  display: block;
+  height: auto;
+  margin-bottom: 20px; }
   .container:after, .container:before {
     clear: both; }
 
@@ -293,82 +297,174 @@ section:nth-child(8) {
     width: 100%;
     display: block; }
 
-.container {
-  display: block;
-  height: auto;
-  margin-bottom: 20px; }
-  .container .slideWrap {
-    width: 95%;
+.container .swiper-container {
+  width: 100%;
+  height: 100%; }
+  .container .swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    .container .swiper-container .swiper-slide a img {
+      width: 100%; }
+.container .slideWrap {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  border: 1px solid #cbcbcb;
+  overflow: hidden; }
+  .container .slideWrap ul {
+    width: 500%;
     margin: 0 auto;
-    position: relative;
-    background: #fff;
-    border: 1px solid #cbcbcb;
-    overflow: hidden; }
-    .container .slideWrap ul {
-      width: 500%;
-      margin: 0 auto;
-      list-style: none; }
-      .container .slideWrap ul li {
-        width: 20%;
-        float: left; }
-        .container .slideWrap ul li a img {
-          width: 100%; }
-    .container .slideWrap .SlideNav {
-      width: 35%;
-      margin: 0 auto;
-      margin-top: 5px; }
-      .container .slideWrap .SlideNav li {
-        width: 15px;
-        height: 15px;
-        display: inline-block;
-        border-radius: 50%;
-        border: 1px solid white;
-        background-color: #cbcbcb; }
-    .container .slideWrap #sag {
-      position: absolute;
-      right: 5%;
-      top: 40%;
-      background: rgba(0, 0, 0, 0.7);
-      width: 45px;
-      height: 45px;
-      color: white;
-      font-size: 45px;
-      border-radius: 50%;
-      text-align: center; }
-    .container .slideWrap #sol {
-      position: absolute;
-      top: 40%;
-      left: 5%;
-      background: rgba(0, 0, 0, 0.7);
-      width: 45px;
-      height: 45px;
-      color: white;
-      font-size: 45px;
-      border-radius: 50%;
-      text-align: center; }
-  .container .haber {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 0;
-    position: relative; }
-    .container .haber .foto {
-      width: 100%;
-      margin: 0 auto; }
-      .container .haber .foto a img {
+    list-style: none; }
+    .container .slideWrap ul li {
+      width: 20%;
+      float: left; }
+      .container .slideWrap ul li a img {
         width: 100%; }
-    .container .haber .Baslik {
-      position: absolute;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      font-size: 27px;
-      padding: 5px; }
-      .container .haber .Baslik span {
-        margin: 0 auto;
-        display: table; }
+  .container .slideWrap .SlideNav {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 5px; }
+    .container .slideWrap .SlideNav li {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      border-radius: 50%;
+      border: 1px solid white;
+      background-color: #cbcbcb; }
+      .container .slideWrap .SlideNav li.homeActive {
+        background-color: #ec2142; }
+  .container .slideWrap #sag {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 45px;
+    height: 45px;
+    color: white;
+    font-size: 45px;
+    border-radius: 50%;
+    text-align: center; }
+  .container .slideWrap #sol {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 45px;
+    height: 45px;
+    color: white;
+    font-size: 45px;
+    border-radius: 50%;
+    text-align: center; }
+.container .haber {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0;
+  position: relative; }
+  .container .haber .foto {
+    width: 100%;
+    margin: 0 auto; }
+    .container .haber .foto a img {
+      width: 100%; }
+  .container .haber .Baslik {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 27px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box; }
+    .container .haber .Baslik span {
+      margin: 0 auto;
+      display: table; }
+.container .doviz {
+  position: relative;
+  width: 95%;
+  margin: 0 auto; }
+  .container .doviz ul {
+    display: inline-block;
+    width: 100%; }
+    .container .doviz ul li {
+      float: left;
+      background: #fff;
+      height: 65px;
+      width: 47%;
+      border-radius: 30px 30px 0 0; }
+      .container .doviz ul li:nth-child(1) {
+        margin-right: 5%; }
+        .container .doviz ul li:nth-child(1) .diss-doviz {
+          margin-top: 8px;
+          color: red; }
+      .container .doviz ul li:nth-child(2) .diss-doviz {
+        margin-top: 8px;
+        color: green; }
+      .container .doviz ul li a {
+        text-align: center; }
+        .container .doviz ul li a span {
+          display: block;
+          background: #ec2142;
+          height: 24px;
+          color: white;
+          border-radius: 30px 30px 0 0;
+          padding-top: 10px; }
+.container #widgets {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  height: 70px; }
+  .container #widgets .weather-box {
+    background: #fff;
+    width: 50%;
+    float: left;
+    height: inherit;
+    position: relative;
+    border-right: 1px solid gray; }
+    .container #widgets .weather-box p {
+      text-align: center;
+      font-size: 19px; }
+    .container #widgets .weather-box i {
+      position: relative;
+      float: left;
+      font-size: 34px;
+      text-align: center;
+      width: 70px;
+      top: 10px;
+      color: #42aae6; }
+    .container #widgets .weather-box ul {
+      margin-top: 10px; }
+  .container #widgets .traffic-box {
+    position: relative;
+    float: left;
+    width: 49%;
+    height: inherit;
+    background: #fff; }
+    .container #widgets .traffic-box h5 {
+      text-align: center;
+      margin-top: 10px; }
+    .container #widgets .traffic-box p {
+      text-align: center;
+      margin-top: 15px; }
 
-#slideSection, #BesliHaber {
-  background-color: white;
+#widgets, #BesliHaber {
+  background-color: transparent;
   position: relative;
   margin-top: 3%; }
 
@@ -382,7 +478,7 @@ section:nth-child(8) {
     position: absolute;
     z-index: 9;
     left: 40%;
-    width: 44%;
+    width: 140px;
     top: 2%; }
     #mNav #navLogo img {
       width: 100%; }
@@ -487,6 +583,8 @@ body {
       z-index: 9999; }
     body.searchMode .control .fa {
       opacity: 0; }
+    body.searchMode .control .SearchButton {
+      transform: scale(0); }
 
 .icon-close {
   position: fixed;
@@ -528,5 +626,125 @@ body {
     opacity: 1; }
   .SearchForm :-ms-input-placeholder {
     color: #EEE; }
+
+.container .haberKategori {
+  position: relative;
+  margin-top: 10%;
+  border-bottom: 1px solid #ec2142; }
+  .container .haberKategori a {
+    color: #ec2142;
+    position: absolute;
+    background: #eee;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: -19px;
+    margin-left: 20px; }
+.container .haberBaslik {
+  margin: 20px 0 20px 0;
+  font-size: 32px; }
+.container .tarih {
+  color: gray; }
+.container .yayinci {
+  margin: 10px 0 10px 0; }
+.container .fotoDiv img {
+  width: 100%; }
+.container .haberIcerik {
+  margin: 0 auto;
+  width: 96%; }
+  .container .haberIcerik .spot {
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 22px;
+    margin: 10px 0 10px 0; }
+  .container .haberIcerik .haberAciklama {
+    line-height: 20px;
+    font-family: 'Titillium Web', sans-serif !important; }
+.container .yorumlarWrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px; }
+  .container .yorumlarWrapper .alanBaslik {
+    width: 100%;
+    border-bottom: 3px solid #ec2142;
+    display: inline-flex; }
+    .container .yorumlarWrapper .alanBaslik i {
+      font-size: 30px;
+      color: #333333;
+      margin-left: 10px;
+      padding-bottom: 5px; }
+    .container .yorumlarWrapper .alanBaslik span {
+      margin-left: 10px;
+      font-size: 26px;
+      font-weight: 500;
+      color: #333333; }
+    .container .yorumlarWrapper .alanBaslik .toplamyorum {
+      float: right;
+      width: 200px;
+      text-align: right; }
+  .container .yorumlarWrapper .yorumalani {
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box; }
+    .container .yorumlarWrapper .yorumalani .yrmContainer {
+      overflow: hidden;
+      width: 100%;
+      background-color: #fff;
+      display: block;
+      border: 1px solid #f1f1f1; }
+      .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader {
+        font-size: 16px;
+        background-color: #d6d6d6;
+        height: 30px;
+        line-height: 30px; }
+        .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .adsoyad {
+          width: 30%;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .tarih_ {
+          font-size: 12px !important; }
+        .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .adsoyad, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .tarih_ {
+          float: left;
+          margin-left: 15px; }
+        .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni {
+          float: right; }
+          .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begen, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begenme {
+            float: right;
+            margin-right: 10px; }
+            .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begen #begsay, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begen #dislikesay, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begenme #begsay, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begenme #dislikesay {
+              margin-left: 5px; }
+      .container .yorumlarWrapper .yorumalani .yrmContainer .yrmBody {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box; }
+      .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer {
+        overflow: hidden; }
+        .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody {
+          width: 90%;
+          float: right;
+          overflow: hidden;
+          border-left: 5px solid #2caee1;
+          padding: 15px;
+          background-color: #f9f9f9;
+          box-sizing: border-box; }
+          .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody:nth-child(even) {
+            background-color: #fff !important;
+            border-left: 5px solid #e4e6e8 !important; }
+          .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .data-heightClass {
+            height: auto !important; }
+          .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head {
+            border-bottom: 1px solid #888888;
+            margin-bottom: 10px; }
+            .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .adsoyad {
+              width: 30%;
+              overflow: hidden;
+              text-overflow: ellipsis; }
+            .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .tarih_ {
+              font-size: 12px; }
+            .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .adsoyad, .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .tarih_ {
+              float: left;
+              line-height: 30px;
+              height: 30px; }
+            .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .prg {
+              display: block; }
 
 /*# sourceMappingURL=style.css.map */

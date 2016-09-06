@@ -1,8 +1,38 @@
+
+
+
 .container {
-   // background-color: pink;
-    display: block;
-    height: auto;
-    margin-bottom: 20px;
+   
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+            a{
+                img{
+                    width: 100%;
+                }   
+            }
+        }
+    }
+    
     .slideWrap{
         width: 95%;
         margin: 0 auto;
@@ -36,6 +66,9 @@
                 border-radius: 50%;
                 border: 1px solid white;
                 background-color: #cbcbcb;
+                &.homeActive{
+                    background-color: #ec2142;
+                }
             }
         }
         #sag{
@@ -86,15 +119,111 @@
             color:white;
             font-size: 27px;
             padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
             span{
                 margin: 0 auto;
                 display: table;
             }
         }
     }
+    
+        .doviz{
+            position: relative;
+            width: 95%;
+            margin: 0 auto;
+            ul{
+                display: inline-block;
+                width: 100%;
+                li{
+                    float: left;
+                    background: #fff;
+                    height: 65px;
+                    width: 47%;          
+                    border-radius: 30px 30px 0 0;
+                    &:nth-child(1)
+                    {
+                        margin-right: 5%;
+                        .diss-doviz{
+                            margin-top: 8px;
+                            color:red;
+                        }
+                    }
+                    &:nth-child(2)
+                    {
+                        .diss-doviz{
+                            margin-top: 8px;
+                            color:green;
+                        }
+                    }
+                    a{
+                        text-align: center;
+                        span{
+                            display: block;
+                            background: #ec2142;
+                            height: 24px;
+                            color:white;
+                            border-radius: 30px 30px 0 0;
+                            padding-top: 10px;
+                        }
+                    }
+                    
+                    
+                }
+            }
+        
+    }
+    #widgets{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        height: 70px;
+        .weather-box{
+            background: #fff;
+            width: 50%;
+            float: left;
+            height: inherit;
+            position: relative;
+            border-right: 1px solid gray;
+            p{
+                text-align: center;
+                font-size: 19px;
+            }
+            i{
+                position: relative;
+                float: left;
+                font-size: 34px;
+                text-align: center;
+                width: 70px;
+                top: 10px;
+                color:#42aae6;
+                
+            }
+            ul{
+                margin-top: 10px;
+            }
+
+        }
+        .traffic-box{
+            position: relative;
+            float: left;
+            width: 49%;
+            height: inherit;
+            background: #fff;
+            h5{
+                text-align: center;
+                margin-top: 10px;
+            }
+            p{
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
+    }
 }
-#slideSection,#BesliHaber{
-    background-color: white;
+#widgets,#BesliHaber{
+    background-color: transparent;
     position: relative;
     margin-top: 3%;
 }

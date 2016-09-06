@@ -18,9 +18,14 @@
     <meta name="robots" content="all, follow" />
     <meta name="revisit-after" content="7 days">
     <link rel="stylesheet" href="Content/css/style.css">
+    <link rel="stylesheet" href="Content/css/swiper.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="scripts/jquery-2.2.2.min.js"></script>
+
+
+
 
 </head>
 
@@ -61,46 +66,64 @@
     <div class="SearchForm">
         <input class="input-search" type="text" placeholder="Medyabar'da Ara"></input>
     </div>
+
     <div class="container">
-        <section id="slideSection">
-            <div class="slideWrap">
-                <ul>
-                    <li>
-                        <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd277b49678339ece5c669.jpg" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd65f504207c30b4d07e32.jpg" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd3caea781b6454c6c0f4f.jpg" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd65e6e50aa95630c33301.jpg" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd374504207c30b4d07dcd.jpg" />
-                        </a>
-                    </li>
-                </ul>
-            <ol class="SlideNav">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ol>
-            <a id="sag">></a>
-            <a id="sol"> < </a>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd277b49678339ece5c669.jpg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd65f504207c30b4d07e32.jpg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd3caea781b6454c6c0f4f.jpg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd65e6e50aa95630c33301.jpg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/800x666/57cd374504207c30b4d07dcd.jpg" />
+                    </a>
+                </div>
+
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="doviz">
+            <ul>
+                <li><a href="" target="_blank"><span class="title-doviz">DOLAR</span><div class="diss-doviz">% -0,66</div></a></li>
+                <li><a href="" target="_blank"><span class="title-doviz">EURO</span><div class="diss-doviz">% 0,45</div></a></li>
+            </ul>
+        </div>
+        <section id="widgets">
+            <div class="weather-box icon">
+                <p class="city-name">Sakarya</p>
+                <i class="wi"></i>
+                <ul>
+                    <li class="sicaklik"></li>
+                    <li class="nem"></li>
+                </ul>
+            </div>
+          
+            <div class="traffic-box">
+                <a href="https://yandex.com.tr/harita/103843/adapazari/?ll=30.363125%2C40.761143&z=13&l=trf%2Ctrfe" target="_blank">
+                    <h5 class="traffic-box-title">YOL DURUMU</h5>
+                    <p class="traffic-status">Anlık takip edin »</p>
+                </a>
+            </div>
+              <div style="clear:both"></div>
         </section>
         <section id="BesliHaber">
             <div class="haber">
                 <div class="foto">
-                <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd53a46ce436160c424a2a.jpg" /> </a>
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd53a46ce436160c424a2a.jpg" /> </a>
                 </div>
                 <div class="Baslik">
                     <span>Bakanlıktan ceza uyarısı</span>
@@ -110,7 +133,7 @@
         <section id="BesliHaber">
             <div class="haber">
                 <div class="foto">
-                <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd3949ac1fe339e826cb1b.jpg" /> </a>
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd3949ac1fe339e826cb1b.jpg" /> </a>
                 </div>
                 <div class="Baslik">
                     <span>Tanju Çolak'ın unutamadığı olay: Uçak düşsün diye dua ettim</span>
@@ -120,7 +143,7 @@
         <section id="BesliHaber">
             <div class="haber">
                 <div class="foto">
-                <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd662b61361f0f881abbed.jpg" /> </a>
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd662b61361f0f881abbed.jpg" /> </a>
                 </div>
                 <div class="Baslik">
                     <span>Ünlü sanatçıdan "FETÖ'cüsün" mesajına suç duyurusu</span>
@@ -130,7 +153,7 @@
         <section id="BesliHaber">
             <div class="haber">
                 <div class="foto">
-                <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd643bf0dc1e372c0e2ddf.jpg" /> </a>
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd643bf0dc1e372c0e2ddf.jpg" /> </a>
                 </div>
                 <div class="Baslik">
                     <span>Sema Çelebi gözaltına alındı.</span>
@@ -140,7 +163,7 @@
         <section id="BesliHaber">
             <div class="haber">
                 <div class="foto">
-                <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd567e6ce436160c424a32.jpg" /> </a>
+                    <a href=""><img src="http://i.cnnturk.com/ps/cnnturk/100/400x333/57cd567e6ce436160c424a32.jpg" /> </a>
                 </div>
                 <div class="Baslik">
                     <span>Gül'ün danışmanı Sever'in hapsi istendi</span>
@@ -151,11 +174,13 @@
 
     </div>
     <nav id="mFooter">
-            
-        </nav>
+
+    </nav>
 
 </body>
-<script src="scripts/unslider.js"></script>
+<script src="scripts/swiper.min.js"></script>
 <script src="scripts/mobile.js"></script>
+<script src="scripts/ajax.js"></script>
 
 </html>
+
