@@ -53,7 +53,35 @@ a {
   text-decoration: none;
   color: #212121; }
 
-@media (max-width: 360px) {
+@media (min-width: 1024px) {
+  .container {
+    width: 75% !important; }
+
+  #mNav {
+    width: 80% !important;
+    left: 10%; }
+
+  #mFooter {
+    width: 80% !important;
+    margin: 0 auto; } }
+@media (min-width: 620px) {
+  .haber {
+    width: 45% !important;
+    float: left !important;
+    margin-left: 3% !important; }
+
+  .doviz {
+    width: 40% !important;
+    float: left !important; }
+    .doviz li:nth-child(1) {
+      margin-right: 3% !important; }
+
+  #widgets {
+    width: 60% !important;
+    float: left !important;
+    margin-top: 0 !important;
+    height: 65px !important; } }
+@media (max-width: 620px) {
   .SearchForm {
     left: 16px !important; }
     .SearchForm input {
@@ -114,6 +142,7 @@ body {
   width: 96%;
   margin: 0 auto;
   position: relative;
+  top: 10%;
   display: block;
   height: auto;
   margin-bottom: 20px; }
@@ -376,7 +405,8 @@ section:nth-child(8) {
   width: 90%;
   margin: 0 auto;
   font-size: 0;
-  position: relative; }
+  position: relative;
+  margin-bottom: 3%; }
   .container .haber .foto {
     width: 100%;
     margin: 0 auto; }
@@ -472,14 +502,15 @@ section:nth-child(8) {
   width: 100%;
   display: block;
   height: 50px;
-  background-color: #ec2142;
-  overflow: hidden; }
+  position: fixed;
+  z-index: 9999;
+  background-color: #ec2142; }
   #mNav #navLogo {
     position: absolute;
     z-index: 9;
     left: 40%;
     width: 140px;
-    top: 2%; }
+    top: 15%; }
     #mNav #navLogo img {
       width: 100%; }
   #mNav #collapseItem {
@@ -520,9 +551,8 @@ section:nth-child(8) {
         text-align: center;
         font-size: 30px; }
         #mNav .navOverlay #navSlideWrapper ul li {
-          padding: 20px;
-          border-bottom: 2px solid gray;
-          border-bottom-right-radius: 20px; }
+          padding: 10px;
+          border-bottom: 1px solid black; }
           #mNav .navOverlay #navSlideWrapper ul li:active {
             background: #ec2142; }
             #mNav .navOverlay #navSlideWrapper ul li:active a {
@@ -563,6 +593,8 @@ section:nth-child(8) {
     color: white; }
 
 #mFooter {
+  position: relative;
+  top: 15%;
   width: 100%;
   display: block;
   height: 150px;
@@ -627,25 +659,25 @@ body {
   .SearchForm :-ms-input-placeholder {
     color: #EEE; }
 
-.container .haberKategori {
-  position: relative;
-  margin-top: 10%;
-  border-bottom: 1px solid #ec2142; }
-  .container .haberKategori a {
-    color: #ec2142;
-    position: absolute;
-    background: #eee;
-    font-size: 25px;
-    padding: 5px;
-    margin-top: -19px;
-    margin-left: 20px; }
-.container .haberBaslik {
-  margin: 20px 0 20px 0;
-  font-size: 32px; }
-.container .tarih {
-  color: gray; }
-.container .yayinci {
-  margin: 10px 0 10px 0; }
+.container .haberaltust {
+  padding-top: 25px; }
+  .container .haberaltust .haberKategori {
+    border-bottom: 1px solid #ec2142; }
+    .container .haberaltust .haberKategori a {
+      color: #ec2142;
+      position: absolute;
+      background: #eee;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: -19px;
+      margin-left: 20px; }
+  .container .haberaltust .haberBaslik {
+    margin: 20px 0 20px 0;
+    font-size: 32px; }
+  .container .haberaltust .tarih {
+    color: gray; }
+  .container .haberaltust .yayinci {
+    margin: 10px 0 10px 0; }
 .container .fotoDiv img {
   width: 100%; }
 .container .haberIcerik {
@@ -659,92 +691,234 @@ body {
   .container .haberIcerik .haberAciklama {
     line-height: 20px;
     font-family: 'Titillium Web', sans-serif !important; }
-.container .yorumlarWrapper {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20px; }
-  .container .yorumlarWrapper .alanBaslik {
+
+/*.yorumlarWrapper{
     width: 100%;
-    border-bottom: 3px solid #ec2142;
-    display: inline-flex; }
-    .container .yorumlarWrapper .alanBaslik i {
-      font-size: 30px;
-      color: #333333;
-      margin-left: 10px;
-      padding-bottom: 5px; }
-    .container .yorumlarWrapper .alanBaslik span {
-      margin-left: 10px;
-      font-size: 26px;
-      font-weight: 500;
-      color: #333333; }
-    .container .yorumlarWrapper .alanBaslik .toplamyorum {
-      float: right;
-      width: 200px;
-      text-align: right; }
-  .container .yorumlarWrapper .yorumalani {
-    width: 100%;
-    margin-top: 20px;
-    box-sizing: border-box; }
-    .container .yorumlarWrapper .yorumalani .yrmContainer {
-      overflow: hidden;
-      width: 100%;
-      background-color: #fff;
-      display: block;
-      border: 1px solid #f1f1f1; }
-      .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader {
-        font-size: 16px;
-        background-color: #d6d6d6;
-        height: 30px;
-        line-height: 30px; }
-        .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .adsoyad {
-          width: 30%;
-          overflow: hidden;
-          text-overflow: ellipsis; }
-        .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .tarih_ {
-          font-size: 12px !important; }
-        .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .adsoyad, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .tarih_ {
-          float: left;
-          margin-left: 15px; }
-        .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni {
-          float: right; }
-          .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begen, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begenme {
-            float: right;
-            margin-right: 10px; }
-            .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begen #begsay, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begen #dislikesay, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begenme #begsay, .container .yorumlarWrapper .yorumalani .yrmContainer .yorumHeader .begeni .begenme #dislikesay {
-              margin-left: 5px; }
-      .container .yorumlarWrapper .yorumalani .yrmContainer .yrmBody {
+    box-sizing: border-box;
+    padding: 20px;
+    .alanBaslik{
         width: 100%;
-        padding: 20px;
-        box-sizing: border-box; }
-      .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer {
-        overflow: hidden; }
-        .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody {
-          width: 90%;
-          float: right;
-          overflow: hidden;
-          border-left: 5px solid #2caee1;
-          padding: 15px;
-          background-color: #f9f9f9;
-          box-sizing: border-box; }
-          .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody:nth-child(even) {
-            background-color: #fff !important;
-            border-left: 5px solid #e4e6e8 !important; }
-          .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .data-heightClass {
-            height: auto !important; }
-          .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head {
-            border-bottom: 1px solid #888888;
-            margin-bottom: 10px; }
-            .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .adsoyad {
-              width: 30%;
-              overflow: hidden;
-              text-overflow: ellipsis; }
-            .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .tarih_ {
-              font-size: 12px; }
-            .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .adsoyad, .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .tarih_ {
-              float: left;
-              line-height: 30px;
-              height: 30px; }
-            .container .yorumlarWrapper .yorumalani .yrmContainer .yrmyrmContainer .yrmyrmBody .head .prg {
-              display: block; }
+        border-bottom: 3px solid #ec2142;
+        display: inline-flex;
+        i{
+            font-size: 30px;
+            color: #333333;
+            margin-left: 10px;
+            padding-bottom: 5px;
+        }
+        span{
+            margin-left: 10px;
+            font-size: 26px;
+            font-weight: 500;
+            color:#333333;
+        }
+        .toplamyorum{
+            float:right;
+            width: 200px;
+            text-align: right;
+        }
+    }
+    .yorumalani{
+        width: 100%;
+        margin-top: 20px;
+        box-sizing: border-box;
+        .yrmContainer{
+            overflow: hidden;
+            width: 100%;
+            background-color: #fff;
+            display: block;
+            border: 1px solid #f1f1f1;
+            .yorumHeader{
+                font-size: 16px;
+                background-color: #d6d6d6;
+                height: 30px;
+                line-height: 30px;
+                .adsoyad{
+                    width: 30%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .tarih_{
+                    font-size: 12px !important;
+                }
+                .adsoyad,.tarih_{
+                    float: left;
+                    margin-left: 15px;
+                }
+                .begeni{
+                    float: right;
+                    .begen,.begenme{
+                        float: right;
+                        margin-right: 10px;
+                        #begsay,#dislikesay{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+            .yrmBody{
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .yrmyrmContainer{
+                overflow: hidden;
+                .yrmyrmBody{
+                    width: 90%;
+                    float: right;
+                    overflow: hidden;
+                    border-left: 5px solid #2caee1;
+                    padding: 15px;
+                    background-color: #f9f9f9;
+                    box-sizing: border-box;
+                    &:nth-child(even){
+                        background-color: #fff !important;
+                        border-left: 5px solid #e4e6e8 !important;
+                    }
+                    .data-heightClass{
+                        height: auto !important;
+                    }
+                    .head{
+                        border-bottom: 1px solid #888888;
+                        margin-bottom: 10px;
+                        .adsoyad{
+                            width: 30%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        .tarih_{
+                            font-size: 12px;
+                        }
+                        .adsoyad,.tarih_{
+                            float: left;
+                            line-height: 30px;
+                            height: 30px;
+                        }
+                        .prg{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+.container .kategoriUst {
+  padding-top: 25px;
+  padding-bottom: 15px; }
+  .container .kategoriUst .kategoriSiyaset {
+    border-bottom: 10px solid #ec2142; }
+    .container .kategoriUst .kategoriSiyaset a {
+      color: #ec2142;
+      position: absolute;
+      background: #eee;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: -13px;
+      margin-left: 20px; }
+  .container .kategoriUst .kategoriGuncel {
+    border-bottom: 10px solid #ffb837; }
+    .container .kategoriUst .kategoriGuncel a {
+      color: #ffb837;
+      position: absolute;
+      background: #eee;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: -13px;
+      margin-left: 20px; }
+  .container .kategoriUst .kategoriMedya {
+    border-bottom: 10px solid #37b5ff; }
+    .container .kategoriUst .kategoriMedya a {
+      color: #37b5ff;
+      position: absolute;
+      background: #eee;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: -13px;
+      margin-left: 20px; }
+  .container .kategoriUst .kategoriYasam {
+    border-bottom: 10px solid #ed0b0b; }
+    .container .kategoriUst .kategoriYasam a {
+      color: #ed0b0b;
+      position: absolute;
+      background: #eee;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: -13px;
+      margin-left: 20px; }
+  .container .kategoriUst .kategoriSpor {
+    border-bottom: 10px solid #11dc17; }
+    .container .kategoriUst .kategoriSpor a {
+      color: #11dc17;
+      position: absolute;
+      background: #eee;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: -13px;
+      margin-left: 20px; }
+  .container .kategoriUst .kategoriArkaKapi {
+    border-bottom: 10px solid #636363; }
+    .container .kategoriUst .kategoriArkaKapi a {
+      color: #636363;
+      position: absolute;
+      background: #eee;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: -13px;
+      margin-left: 20px; }
+
+.container .kategoriUst {
+  padding-top: 25px;
+  padding-bottom: 15px; }
+  .container .kategoriUst .yazarlar {
+    border-bottom: 10px solid #d45800; }
+    .container .kategoriUst .yazarlar a {
+      color: #d45800;
+      position: absolute;
+      background: #eee;
+      font-size: 25px;
+      padding: 5px;
+      margin-top: -13px;
+      margin-left: 20px; }
+.container .yazilar {
+  width: 100%;
+  margin-top: 20px;
+  background-color: transparent; }
+  .container .yazilar .yaziAlani {
+    width: 93%;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 5% !important;
+    margin: 0 auto; }
+    .container .yazilar .yaziAlani img {
+      float: left;
+      width: 35%;
+      border-radius: 50%; }
+    .container .yazilar .yaziAlani .yazarAd {
+      float: left;
+      margin-top: 6%;
+      margin-left: 5%;
+      width: 51%;
+      font-size: 24px;
+      padding: 5px;
+      border-bottom: 1px solid black; }
+      .container .yazilar .yaziAlani .yazarAd span {
+        margin-left: 6%;
+        text-align: center; }
+    .container .yazilar .yaziAlani h1 {
+      font-size: 29px;
+      margin-top: 34%; }
+    .container .yazilar .yaziAlani .spot {
+      margin-top: 6%;
+      margin-bottom: 6%;
+      font-weight: bold;
+      line-height: 20px; }
+    .container .yazilar .yaziAlani .icerik {
+      margin-bottom: 5%;
+      line-height: 20px; }
+    .container .yazilar .yaziAlani a {
+      color: #d45800; }
+    .container .yazilar .yaziAlani .yaziTarih {
+      float: right; }
 
 /*# sourceMappingURL=style.css.map */

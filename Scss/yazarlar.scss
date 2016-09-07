@@ -1,0 +1,72 @@
+.container{
+    .kategoriUst{
+        padding-top: 25px;
+        padding-bottom: 15px;
+        .yazarlar{
+                border-bottom: 10px solid #d45800;
+                a{
+                    color:#d45800;
+                    position: absolute;
+                    background: #eee;
+                    font-size: 25px;
+                    padding: 5px;
+                    margin-top: -13px;
+                    margin-left: 20px;
+                }
+        }
+    }
+    .yazilar{
+        width: 100%;
+        margin-top: 20px;
+        background-color: transparent;
+        .yaziAlani{
+            width: 93%;
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 5% !important;
+            margin: 0 auto;
+            img{
+                float: left;
+                width: 35%;
+                border-radius: 50%
+            }
+            
+            .yazarAd{
+                float: left;
+                margin-top: 6%;
+                margin-left: 5%;
+                width: 51%;
+                font-size: 24px;
+                padding: 5px;
+                border-bottom: 1px solid black;
+                span{
+                    margin-left: 6%;
+                    text-align: center;
+                    }
+            }
+                
+            
+            
+            h1{
+                font-size: 29px;
+                margin-top: 34%;
+            }
+            .spot{
+                margin-top: 6%;
+                margin-bottom: 6%;
+                font-weight: bold;
+                line-height: 20px;
+            }
+            .icerik{
+                margin-bottom: 5%;
+                line-height: 20px;
+            }
+            a{
+                color: #d45800;
+            }
+            .yaziTarih{
+                float: right;
+            }
+        }
+    }
+}

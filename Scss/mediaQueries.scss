@@ -1,12 +1,44 @@
-@media (min-width: 620px) {
-    .container {
-      //  background-color: lightblue !important;
+@media (min-width:1024px)
+{
+    .container{
+        width: 75% !important;
     }
-    nav {
-   //     background-color: yellow !important;
+    #mNav{
+        width: 80% !important;
+        left: 10%;
+    }
+    #mFooter{
+        width: 80% !important;
+        margin: 0 auto;
     }
 }
-@media(max-width:360px){
+
+
+
+@media (min-width: 620px) {
+    .haber{
+        width: 45% !important;
+        float: left !important;
+        margin-left: 3% !important;
+    }
+    .doviz{
+        width: 40% !important;
+        float: left !important;
+        li{
+            &:nth-child(1)
+            {
+                margin-right: 3% !important;
+            }
+        }
+    }
+    #widgets{
+        width: 60% !important;
+        float: left !important;
+        margin-top: 0 !important;
+        height: 65px !important;
+    }
+}
+@media(max-width:620px){
 .SearchForm{
         left:16px !important;
         input{

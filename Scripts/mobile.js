@@ -4,7 +4,7 @@ var swiper = new Swiper('.swiper-container', {
     paginationClickable: true
 });
  $('.control').click( function(){
-     $(".container").css("position","inherit");
+   //  $(".container").css("position","inherit");
   $('body').addClass('searchMode');
   $('.input-search').focus();
 });

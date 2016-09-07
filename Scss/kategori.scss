@@ -1,0 +1,78 @@
+.container{
+    .kategoriUst{
+        padding-top: 25px;
+        padding-bottom: 15px;
+        .kategoriSiyaset{
+                border-bottom: 10px solid #ec2142;
+                a{
+                    color:#ec2142;
+                    position: absolute;
+                    background: #eee;
+                    font-size: 25px;
+                    padding: 5px;
+                    margin-top: -13px;
+                    margin-left: 20px;
+                }
+        }
+        .kategoriGuncel{
+                border-bottom: 10px solid #ffb837;
+                a{
+                    color:#ffb837;
+                    position: absolute;
+                    background: #eee;
+                    font-size: 25px;
+                    padding: 5px;
+                    margin-top: -13px;
+                    margin-left: 20px;
+                }
+        }
+        .kategoriMedya{
+                border-bottom: 10px solid #37b5ff;
+                a{
+                    color:#37b5ff;
+                    position: absolute;
+                    background: #eee;
+                    font-size: 25px;
+                    padding: 5px;
+                    margin-top: -13px;
+                    margin-left: 20px;
+                }
+        }
+        .kategoriYasam{
+                border-bottom: 10px solid #ed0b0b;
+                a{
+                    color:#ed0b0b;
+                    position: absolute;
+                    background: #eee;
+                    font-size: 25px;
+                    padding: 5px;
+                    margin-top: -13px;
+                    margin-left: 20px;
+                }
+        }
+        .kategoriSpor{
+                border-bottom: 10px solid #11dc17;
+                a{
+                    color:#11dc17;
+                    position: absolute;
+                    background: #eee;
+                    font-size: 25px;
+                    padding: 5px;
+                    margin-top: -13px;
+                    margin-left: 20px;
+                }
+        }
+        .kategoriArkaKapi{
+                border-bottom: 10px solid #636363;
+                a{
+                    color:#636363;
+                    position: absolute;
+                    background: #eee;
+                    font-size: 25px;
+                    padding: 5px;
+                    margin-top: -13px;
+                    margin-left: 20px;
+                }
+        }
+    }
+}

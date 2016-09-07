@@ -1,27 +1,29 @@
 .container{
-    .haberKategori{
-        position: relative;
-        margin-top:10%;
-        border-bottom: 1px solid #ec2142;
-        a{
-            color:#ec2142;
-            position: absolute;
-            background: #eee;
-            font-size: 25px;
-            padding: 5px;
-            margin-top: -19px;
-            margin-left: 20px;
+    .haberaltust{
+        padding-top: 25px;
+        .haberKategori{
+            border-bottom: 1px solid #ec2142;
+            a{
+                color:#ec2142;
+                position: absolute;
+                background: #eee;
+                font-size: 25px;
+                padding: 5px;
+                margin-top: -19px;
+                margin-left: 20px;
+            }
         }
-    }
-    .haberBaslik{
-        margin: 20px 0 20px 0;
-        font-size: 32px;
-    }
-    .tarih{
-        color: gray;
-    }
-    .yayinci{
-        margin: 10px 0 10px 0;
+        .haberBaslik{
+            margin: 20px 0 20px 0;
+            font-size: 32px;
+        }
+        .tarih{
+            color: gray;
+        }
+        .yayinci{
+            margin: 10px 0 10px 0;
+        }
+
     }
     .fotoDiv{
         img{
