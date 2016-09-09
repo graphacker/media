@@ -1,0 +1,32 @@
+.container{
+    .kullanim{
+        width: 100%;
+        background-color: transparent;
+        padding-top: 5%;
+        .kullanimText{
+            width: 85%;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 5% !important;
+            margin-bottom: 5% !important;
+            background-color: white;
+            h1{
+                font-size: 21px;
+            }
+            span{
+                line-height: 20px;
+            }
+            ul{
+                margin-left: 15px;
+                list-style: disc;
+                li{
+                    margin-top: 5px;
+                    line-height: 20px;
+                }
+            }
+            strong{
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.container{
+    .galeriAlan{
+        width: 92%;
+        background-color: #fff !important;
+        padding: 10px;
+        position: relative;
+        top: 25px;
+        .galeriIcerik{
+            width: 100%;
+            margin-top: 5%;
+            .baslikGaleri{
+                h1{
+                    font-size: 21px;
+                    font-weight: bold;
+                }
+                .galeriBilgi{
+                    padding-bottom:2%;
+                    line-height: 30px;
+                    margin-top: 10px;
+                    p{
+                        span{
+                            color: #4198d2;
+                        }
+                    }
+                }
+            }
+            ul{
+                .gall{
+                     .gallery-title{
+                            border-top: 1px solid #bccddd;
+                            padding-top: 30px;
+                            margin: 20px 0;
+                            ul{
+                                display: -webkit-box;
+                                font-size: 25px;
+                                width: 100%;
+                                text-align: center;
+                                li{
+                                    line-height: 33px;
+                                    height: 35px;
+                                    &:first-child{
+                                        width: 20%;
+                                        background-color: #dae9f5;
+                                        &:after{
+                                            content: " |";
+                                        }
+                                    }
+                                    &:nth-child(2){
+                                        border-right: 1px solid #bccddd;
+                                        background-color: #dae9f5;
+                                        width: 10%;
+                                        position: relative;
+                                        left: -13px;
+                                        color: #acb4bb;
+                                    }
+                                }
+                            }
+                     }
+                     figure{
+                         .gallery-pic{
+                             img{
+                                 width: 100%;
+                             }
+                         }
+                         figcaption{
+                             margin-top: 10px;
+                             line-height: 20px;
+                         }
+                     }
+                     
+                }
+            }
+        }
+    }
+}
+

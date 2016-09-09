@@ -26,7 +26,9 @@ $('.icon-close').click( function(){
         overlay.toggleClass('navOverlayProp');
         sliderWrapper.toggleClass('navSlideWrapperTransform');
     })
-
+    sliderWrapper.click(function(event){
+    event.stopPropagation();
+    });
 
 index=0;	
 //var width = $(".slideWrap ul li")[0].getBoundingClientRect().width;
@@ -53,13 +55,15 @@ $(".icon-close").click(function(){
     $(".SearchButton").css("transform","scale(1)");
 });
 var say=0;
-$("#kategori").click(function(){
+$("#kategori").click(function(){    
     if(say==0)
     {
+        $("#kategori").css("color","#ec2142");
         $(".kategoriler").slideDown();
         say++;
     }
     else{
+        $("#kategori").css("color","#555555");
         $(".kategoriler").slideUp();
         say=0;
     }
@@ -69,10 +73,12 @@ var sayac=0;
 $("#politika").click(function(){
     if(sayac==0)
     {
+        $("#politika").css("color","#ec2142");
         $(".politikalar").slideDown();
         sayac++;
     }
     else{
+        $("#politika").css("color","#555555");
         $(".politikalar").slideUp();
         sayac=0;
     }

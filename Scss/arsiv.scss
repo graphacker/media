@@ -1,0 +1,82 @@
+.container{
+    .arsivUst{
+        width:100%;
+        position: relative;
+        top: 30px;
+        margin-bottom: 50px;
+        background-color: #ff6a00;
+        .baslikArsiv{
+            background-color: #eeeeee;
+            position: relative;
+            display: inline;
+            font-size: 25px;
+            right: -8%;
+            padding: 10px;
+            a{
+                color: #ff6a00;
+                font-weight: bold;
+            }
+        }
+    }
+    .arsiv{
+        background-color: transparent;
+        width: 100%;
+        padding: 10px;
+        .arsivArama {
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            float: left;
+            .arama {
+                float: left;
+                margin-right: 5%;
+                input {
+                    border: none;
+                    background-color: #f7f7f7;
+                    border: 1px solid darken(#f7f7f7, 10%);
+                    margin: 15px 0 10px 0;
+                    padding: 10px;
+                    outline: none;
+                    box-shadow: none;
+                    font-size: .9rem;
+                    transition: all 0.3s;
+                    width: 60%;
+                    margin-right: 10px;
+                    &:focus {
+                        box-shadow: 0 0 2px 1px #ccc;
+                    }
+                }
+                
+            }
+            button {
+                background-color: #dc0d20;
+                color: white;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+                vertical-align: middle;
+                will-change: opacity, transform;
+                -webkit-transition: all .3s ease-out;
+                -moz-transition: all .3s ease-out;
+                -o-transition: all .3s ease-out;
+                -ms-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+                border: none;
+                outline: none;
+                padding: 9px 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+                &:hover {
+                    background-color: #333;
+                    color: white;
+                }
+                i {
+                    margin-right: 5px;
+                        font-size: 17px;
+
+                }
+            }
+        }
+    }
+}
