@@ -46,10 +46,13 @@
             }
                 
             
-            
             h1{
                 font-size: 29px;
                 margin-top: 34%;
+            }
+            .yazaryazi{
+                font-size: 29px;
+                margin: 0;
             }
             .spot{
                 margin-top: 6%;
@@ -61,12 +64,53 @@
                 margin-bottom: 5%;
                 line-height: 20px;
             }
-            a{
+            .koseyazar{
                 color: #d45800;
             }
             .yaziTarih{
                 float: right;
             }
+        }
+    }
+    .yazardiv{
+        background-color: white;
+        width: 97%;
+        padding: 5px;
+        margin-top: 5%;
+        a{
+            img{
+                display: block;
+                width: 25%;
+                float: left;
+                border-radius: 50%;
+            }
+        }
+        .yazarAd{
+            width: 50%;
+            float: left;
+            font-size: 24px;
+            padding-bottom: 2%;
+            margin-left: 10%;
+            border-bottom: 1px solid black;
+            margin-top: 5%;
+            span{
+                margin-left: 6%;
+            }
+        }
+    }
+    .yazilari{
+        position: relative;
+        border-bottom: 1px solid #d45800;
+        margin-top: 10%;
+        span{
+            background-color: #eee;
+            position: absolute;
+            padding-bottom: -24px;
+            top: -12px;
+            left: 15px;
+            letter-spacing: 5px;
+            padding: 5px;
+            color: #d45800;
         }
     }
 }

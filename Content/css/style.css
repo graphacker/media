@@ -935,6 +935,9 @@ body {
     .container .yazilar .yaziAlani h1 {
       font-size: 29px;
       margin-top: 34%; }
+    .container .yazilar .yaziAlani .yazaryazi {
+      font-size: 29px;
+      margin: 0; }
     .container .yazilar .yaziAlani .spot {
       margin-top: 6%;
       margin-bottom: 6%;
@@ -943,10 +946,43 @@ body {
     .container .yazilar .yaziAlani .icerik {
       margin-bottom: 5%;
       line-height: 20px; }
-    .container .yazilar .yaziAlani a {
+    .container .yazilar .yaziAlani .koseyazar {
       color: #d45800; }
     .container .yazilar .yaziAlani .yaziTarih {
       float: right; }
+.container .yazardiv {
+  background-color: white;
+  width: 97%;
+  padding: 5px;
+  margin-top: 5%; }
+  .container .yazardiv a img {
+    display: block;
+    width: 25%;
+    float: left;
+    border-radius: 50%; }
+  .container .yazardiv .yazarAd {
+    width: 50%;
+    float: left;
+    font-size: 24px;
+    padding-bottom: 2%;
+    margin-left: 10%;
+    border-bottom: 1px solid black;
+    margin-top: 5%; }
+    .container .yazardiv .yazarAd span {
+      margin-left: 6%; }
+.container .yazilari {
+  position: relative;
+  border-bottom: 1px solid #d45800;
+  margin-top: 10%; }
+  .container .yazilari span {
+    background-color: #eee;
+    position: absolute;
+    padding-bottom: -24px;
+    top: -12px;
+    left: 15px;
+    letter-spacing: 5px;
+    padding: 5px;
+    color: #d45800; }
 
 .container .kullanim {
   width: 100%;
